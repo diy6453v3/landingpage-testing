@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    background: #efefef;
+    background: #fff;
 }
 h1,
 h2,
@@ -9,7 +9,8 @@ h4,
 h5,
 h6,
 .txt,
-.stips {
+.stips,
+.btn {
     font-family: 'Noto Sans SC', sans-serif;
 }
 a {
@@ -35,6 +36,11 @@ ul {
     position: relative;
     color: #ae0d30;
 }
+.title h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
 .title::after {
     content: '';
     position: absolute;
@@ -53,7 +59,7 @@ ul {
     margin-right: auto;
 }
 .content p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .content span {
     color: #ae0d30;
@@ -65,6 +71,9 @@ ul {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
+.header-btn img {
+    width: 20px;
+}
 /* banner */
 .banner {
     padding-top: 0px;
@@ -75,7 +84,7 @@ ul {
     display: block;
     max-width: 1920px;
     margin: auto;
-    height: 822px;
+    height: 880px;
     background: url(../images/banner-bg.jpg) no-repeat top center;
     background-size: auto 100%;
     position: relative;
@@ -88,24 +97,30 @@ ul {
     display: block;
     max-width: 1200px;
     margin: auto;
-    padding: 0 10px;
+    padding: 0;
     box-sizing: border-box;
 }
 .banner_title {
     display: block;
-    width: 48%;
-    max-width: 530px;
+    width: 60%;
+    max-width: 800px;
     margin: 0 auto 0 0;
+}
+.banner_title h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 .banner_title img.s_title {
     display: block;
     max-width: 96%;
-    margin: 0 auto 20px auto;
+    margin: 0 0 20px 0;
 }
 .banner_title img.banner_button {
     display: block;
     max-width: 96%;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 0px;
 }
 
 @media (max-width: 750px) {
@@ -128,13 +143,18 @@ ul {
 }
 
 .reg-form-area {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: auto;
-    background: rgba(35, 35, 35, 0.478);
-    padding: 40px 0 40px;
+    background: linear-gradient(to left, #dea154, #edc871, #dea154);
+    padding: 40px 0;
+    z-index: 100;
+}
+.reg-form-area img {
+    width: 30px;
+    margin-right: 5px;
 }
 .reg-form {
     margin-left: 15px;
@@ -208,9 +228,9 @@ ul {
     text-align: center;
     width: 152px;
     height: 32px;
-    background: #ffb339;
+    background: #f5de89;
     font-size: 19px;
-    color: #fff;
+    color: #be1a20;
     line-height: 32px;
     border-radius: 16px;
     -webkit-border-radius: 16px;
@@ -226,42 +246,42 @@ ul {
     height: 0;
     border-style: solid;
     border-width: 10px 8px 0 8px;
-    border-color: #ffb339 transparent transparent transparent;
+    border-color: #f5de89 transparent transparent transparent;
 }
 .part1 .pc-money-list li .money {
     display: block;
     margin: 0 auto;
 }
 .part1 .pc-money-list li .money1 {
-    width: 182px;
-    height: 78px;
+    width: 168px;
+    height: 72px;
     background-position: -5px -313px;
     background: url(../images/money1.png) no-repeat top center;
-    margin-top: 28px;
+    margin-top: 40px;
     margin-bottom: 24px;
 }
 .part1 .pc-money-list li .money2 {
-    width: 225px;
-    height: 79px;
+    width: 200px;
+    height: 71px;
     background-position: -5px -392px;
     background: url(../images/money2.png) no-repeat top center;
-    margin-top: 34px;
+    margin-top: 40px;
     margin-bottom: 27px;
 }
 .part1 .pc-money-list li .money3 {
-    width: 231px;
-    height: 79px;
+    width: 215px;
+    height: 72px;
     background-position: -5px -475px;
     background: url(../images/money3.png) no-repeat top center;
-    margin-top: 34px;
+    margin-top: 40px;
     margin-bottom: 27px;
 }
 .part1 .pc-money-list li .money4 {
-    width: 175px;
-    height: 78px;
+    width: 153px;
+    height: 71px;
     background-position: -5px -558px;
     background: url(../images/money4.png) no-repeat top center;
-    margin-top: 28px;
+    margin-top: 40px;
     margin-bottom: 24px;
 }
 .part1 .pc-money-list li .txt {
@@ -281,8 +301,8 @@ ul {
 
 /* button */
 .header-btn {
-    background-color: #ffbf2c;
-    color: #000;
+    background: linear-gradient(to bottom, #dea154, #edc871);
+    color: #fff;
 }
 .pc-btn-group {
     margin: 30px 0 0 0;
@@ -293,26 +313,43 @@ ul {
 }
 .chat-btn {
     margin: 15px;
-    padding: 15px 80px;
+    padding: 30px 80px;
     text-align: center;
     background-color: #fff;
-    color: #ae0d30;
-    font-size: 2rem;
+    color: #0095f8;
+    font-size: 3rem;
     border-radius: 100px;
-    border: 2px solid #ae0d30;
+    border: 2px solid linear-gradient(to left, #1a6fe6, #0095f8);
 }
 .chat-btn:hover {
     color: #ae0d30;
 }
 .open-btn {
-    margin: 15px;
-    padding: 15px 80px;
+    margin: 50px auto 0 auto;
+    padding: 30px 80px;
     text-align: center;
-    background-color: #ae0d30;
+    background: linear-gradient(to left, #1a6fe6, #0095f8);
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     border-radius: 100px;
-    border: 2px solid #ae0d30;
+    border: 2px solid linear-gradient(to left, #1a6fe6, #0095f8);
+    max-width: 500px;
+}
+.btn-primary {
+    background: linear-gradient(to top, #1a6fe6, #0095f8);
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0 0;
+}
+.btn-primary:hover {
+    background: linear-gradient(to top, #0095f8, #1a6fe6);
+}
+.form-select-lg {
+    padding: 0.7rem 1.4rem;
+}
+.form-control-lg {
+    padding: 0.7rem 1.4rem;
 }
 
 /* rules */
@@ -424,14 +461,19 @@ ul {
 
 /* whychoose */
 .whychoose {
-    background-color: #eff2f4;
+    background-color: none;
 }
 .cardbox {
     background-color: #fff;
     padding: 60px;
-    margin: 35px 10px 0 10px;
+    margin: 100px 10px 0 10px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 20px 60px -10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 20px 60px 10px;
+}
+.cardbox h6 {
+    color: #d02927;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 .icon {
     margin-bottom: 20px;
@@ -451,7 +493,7 @@ ul {
 #latest .upper {
     position: relative;
     border-radius: 10px 10px 0 0;
-    height: 25rem;
+    height: 250px;
 }
 #latest .upper1 {
     background: url(../images/img-1.png) no-repeat center;
@@ -506,6 +548,24 @@ ul {
 }
 #latest i {
     margin-right: 5px;
+}
+.footer {
+    background: #424242;
+    padding-top: 60px;
+    padding-bottom: 170px;
+    color: #adadae;
+}
+.contact {
+    padding: 25px 0 15px 0;
+    margin: 30px 0 60px 0;
+    border: 1px solid #4f4f4f;
+    border-radius: 5px;
+}
+.contact img {
+    width: 40px;
+}
+.footer a {
+    color: #adadae;
 }
 
 @media (max-width: 767px) {
