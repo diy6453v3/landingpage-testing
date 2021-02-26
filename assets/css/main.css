@@ -32,13 +32,14 @@ ul {
     padding: 0;
 }
 .title {
-    padding: 0 0 15px 0;
+    padding: 0 0 20px 0;
     position: relative;
     color: #ae0d30;
 }
 .title h1 {
     font-weight: 700;
     font-size: 2.8rem;
+    line-height: 1.5;
 }
 
 .title::after {
@@ -51,7 +52,7 @@ ul {
     background: #ae0d30;
 }
 .content {
-    padding: 30px;
+    padding: 40px;
     line-height: 1.7;
     color: #333;
     max-width: 800px;
@@ -74,10 +75,13 @@ ul {
 .header-btn img {
     width: 20px;
 }
+.header-btn:hover {
+    color: #fff;
+}
 /* banner */
 .banner {
     padding-top: 0px;
-    background: #ae0d30;
+    background: #9e0402;
     position: relative;
 }
 .index_banner {
@@ -121,25 +125,6 @@ ul {
     display: block;
     max-width: 96%;
     margin: 0 0 0 0px;
-}
-
-@media (max-width: 750px) {
-    .banner {
-        padding-top: 0px;
-    }
-    .index_banner {
-        height: 45rem;
-        background: url(../images/banner-bg-m.jpg) no-repeat top center;
-        background-size: auto 100%;
-        padding: 3rem 0 0 0;
-    }
-    .banner_title {
-        width: 90%;
-        margin: auto;
-    }
-    .banner_button {
-        width: 45%;
-    }
 }
 
 .reg-form-area {
@@ -305,10 +290,11 @@ ul {
     color: #fff;
 }
 .pc-btn-group {
-    margin: 30px 0 0 0;
-    display: block;
+    margin: 0 auto;
+    display: none;
 }
 .pc-btn-group h3 {
+    font-size: 1rem;
     margin-bottom: 0;
 }
 .chat-btn {
@@ -325,31 +311,35 @@ ul {
     color: #ae0d30;
 }
 .open-btn {
-    margin: 50px auto 0 auto;
-    padding: 30px 80px;
+    margin: 30px auto 0 auto;
+    padding: 20px 0;
     text-align: center;
-    background: linear-gradient(to left, #1a6fe6, #0095f8);
+    background: linear-gradient(to top, #d02927, #ff0b0d);
     color: #fff;
     font-size: 3rem;
-    border-radius: 100px;
-    border: 2px solid linear-gradient(to left, #1a6fe6, #0095f8);
-    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0 2px 0 0;
+}
+.rebate .open-btn {
+    margin-top: 50px;
 }
 .btn-primary {
-    background: linear-gradient(to top, #1a6fe6, #0095f8);
+    background: linear-gradient(to top, #d02927, #ff0b0d);
     border: none;
     border-radius: 10px;
     padding: 0.7rem 1.4rem;
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 0 0;
 }
 .btn-primary:hover {
-    background: linear-gradient(to top, #0095f8, #1a6fe6);
+    background: linear-gradient(to top, #ff0b0d, #d02927);
 }
 .form-select-lg {
     padding: 0.7rem 1.4rem;
+    border-left: 3px solid #a5a5a5;
 }
 .form-control-lg {
     padding: 0.7rem 1.4rem;
+    border-left: 4px solid #a5a5a5;
 }
 
 /* rules */
@@ -421,6 +411,7 @@ ul {
 /* rebate */
 .rebate {
     background: url(../images/rebate-bg.png) no-repeat top center;
+    background-size: cover;
     position: relative;
 }
 .rebate .title {
@@ -436,7 +427,13 @@ ul {
     border-radius: 10px;
 }
 .rebate h5 {
-    color: #ae0d30;
+    color: #212529;
+    line-height: 2;
+}
+.rebate h5 b {
+    color: #212529;
+    line-height: 2;
+    font-size: 1.6rem;
 }
 .con {
     position: absolute;
@@ -466,7 +463,7 @@ ul {
 .cardbox {
     background-color: #fff;
     padding: 60px;
-    margin: 100px 10px 0 10px;
+    margin: 120px 10px 0 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 20px 60px 10px;
 }
@@ -477,17 +474,6 @@ ul {
 }
 .icon {
     margin-bottom: 20px;
-}
-.iconline1,
-.iconline2,
-.iconline3 {
-    border-right: 1px solid #e2e2e2;
-}
-.iconline1,
-.iconline2,
-.iconline3,
-.iconline4 {
-    padding: 10px;
 }
 
 #latest .upper {
@@ -569,10 +555,24 @@ ul {
 }
 
 @media (max-width: 767px) {
+    .banner {
+        padding-top: 0px;
+    }
+    .index_banner {
+        height: 35rem;
+        background: url(../images/banner-bg-m.jpg) no-repeat top center;
+        background-size: auto 100%;
+        padding: 3rem 0 0 0;
+    }
+    .banner_title {
+        width: 85%;
+        margin: auto;
+    }
+    .banner_button {
+        width: 45%;
+    }
     .iconline1,
-    .iconline2,
-    .iconline3 {
-        border-right: none;
+    .iconline2 {
         margin-bottom: 20px;
     }
     .pc-btn-group {
@@ -580,5 +580,96 @@ ul {
     }
     .m-btn-group {
         display: block;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .content {
+        padding: 20px;
+        line-height: 1.5;
+        color: #333;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content p,
+    p,
+    span {
+        font-size: 0.8rem;
+    }
+    .div-margin {
+        padding: 50px 0;
+    }
+    h5 {
+        font-size: 0.8rem;
+    }
+    .cardbox {
+        padding: 20px;
+        margin: 50px 5px 0 5px;
+    }
+    .reg-form-area {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to left, #dea154, #edc871, #dea154);
+        padding: 40px 0;
+        z-index: 100;
+    }
+    .step .icon {
+        max-width: 80%;
+    }
+    .rebate .icon {
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+    .box2 {
+        margin: 0 5px;
+        padding: 10px 0;
+    }
+    #latest .outer {
+        margin: 0 0 20px 0;
+    }
+    #latest .upper {
+        height: 120px;
+    }
+    #latest h3 {
+        font-size: 1.2rem;
+        margin-left: -0.8rem;
+    }
+    #latest .upper {
+        background-size: cover;
+    }
+    .form-select-lg {
+        padding: 0.5rem 1.4rem;
+        font-size: 1.2rem;
+    }
+    .form-control-lg {
+        padding: 0.5rem 1.4rem;
+        font-size: 1.2rem;
+    }
+    .contact {
+        display: none;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .footer p {
+        font-size: 0.7rem;
+        margin-bottom: 30px;
+    }
+    .title h1 {
+        font-size: 1.2rem;
+    }
+    .pc-money {
+        display: none;
+    }
+    .pc-btn-group {
+        display: block;
+    }
+    .rebate h5 b {
+        font-size: 0.7rem;
     }
 }
