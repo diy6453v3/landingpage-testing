@@ -616,6 +616,7 @@ ul {
         background: linear-gradient(to left, #dea154, #edc871, #dea154);
         padding: 40px 0;
         z-index: 100;
+        transform: none;
     }
     .step .icon {
         max-width: 80%;
