@@ -110,6 +110,9 @@ ul {
     padding: 80px 30px 40px 30px;
     margin-bottom: 80px;
 }
+.card p {
+    margin-bottom: 30px;
+}
 .title2 {
     margin-bottom: 50px;
 }
