@@ -115,6 +115,7 @@ ul {
 }
 .card h3 {
     margin-bottom: 30px;
+    line-height: 1.7;
 }
 .btn1 {
     margin: 30px 0;
@@ -122,8 +123,8 @@ ul {
 .btn2 {
     margin: 30px 0;
 }
-.images2 {
-    max-width: 100%;
+.images2-m {
+    display: none;
 }
 
 /* step */
@@ -231,6 +232,12 @@ ul {
         display: none;
     }
     .step-img-m {
+        display: block;
+    }
+    .images2 {
+        display: none;
+    }
+    .images2-m {
         display: block;
     }
     .whychoose {
