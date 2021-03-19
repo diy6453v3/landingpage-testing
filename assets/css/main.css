@@ -85,7 +85,6 @@ ul {
 /* banner */
 .banner {
     padding-top: 0px;
-    position: relative;
 }
 .index_banner {
     display: block;
@@ -94,7 +93,6 @@ ul {
     height: auto;
     background: url(../images/banner-bg.jpg) no-repeat top center;
     background-size: auto;
-    position: relative;
     box-sizing: border-box;
     padding: 120px 0 0 0;
     perspective: 200px;
@@ -129,25 +127,6 @@ ul {
     max-width: 96%;
     margin: 0 0 0 0px;
 }
-
-.reg-form-area {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to left, #dea154, #edc871, #dea154);
-    padding: 40px 0;
-    z-index: 100;
-}
-.reg-form-area img {
-    width: 30px;
-    margin-right: 5px;
-}
-.reg-form {
-    margin-left: 15px;
-    margin-right: 15px;
-}
 .banner-card {
     margin-top: 320px;
 }
@@ -159,18 +138,19 @@ ul {
     margin-bottom: 80px;
 }
 .title2 {
-    max-width: 586px;
     margin-bottom: 50px;
 }
 .card h3 {
-    max-width: 600px;
     margin-bottom: 30px;
 }
 .btn1 {
-    margin: 30px;
+    margin: 30px 0;
 }
 .btn2 {
-    margin: 30px;
+    margin: 30px 0;
+}
+.images2 {
+    max-width: 100%;
 }
 
 /* step */
@@ -188,10 +168,15 @@ ul {
     color: #d4d4fc;
     margin-top: 30px;
 }
+.step-img {
+    display: block;
+}
+.step-img-m {
+    display: none;
+}
 
 /* whychoose */
 .whychoose {
-    background-color: none;
     padding: 80px 0;
 }
 .whychoose .container {
@@ -238,9 +223,9 @@ ul {
         padding-top: 0px;
     }
     .index_banner {
-        height: 35rem;
+        height: auto;
         background: url(../images/banner-bg-m.jpg) no-repeat top center;
-        background-size: auto 100%;
+        background-size: 100% auto;
         padding: 3rem 0 0 0;
     }
     .banner_title {
@@ -250,84 +235,35 @@ ul {
     .banner_button {
         width: 45%;
     }
-    .iconline1,
-    .iconline2 {
+    .card {
+        background: #efefef;
+        border-radius: 10px;
+        max-width: 100%;
+        padding: 50px 0px 50px 0px;
         margin-bottom: 20px;
     }
-    .pc-btn-group {
+    .card h3 {
+        font-size: 1rem;
+    }
+    .title2,
+    .title3,
+    .title4 {
+        margin-bottom: 35px;
+    }
+    .step {
+        background: url(../images/fw.png) no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding: 80px 0 20px 0;
+    }
+    .step-img {
         display: none;
     }
-    .m-btn-group {
+    .step-img-m {
         display: block;
     }
-    .title h1 {
-        font-size: 1.8rem;
-    }
-    .content {
-        padding: 20px;
-        line-height: 1.5;
-        color: #333;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .content p,
-    p,
-    span {
-        font-size: 0.8rem;
-    }
-    .div-margin {
-        padding: 50px 0;
-    }
-    h5 {
-        font-size: 0.8rem;
-    }
-    .cardbox {
-        padding: 20px;
-        margin: 50px 5px 0 5px;
-    }
-    .reg-form-area {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        background: linear-gradient(to left, #dea154, #edc871, #dea154);
-        padding: 40px 0;
-        z-index: 100;
-        transform: none;
-    }
-    .step .icon {
-        max-width: 80%;
-    }
-    .rebate .icon {
-        max-width: 60%;
-        margin-bottom: 10px;
-    }
-    .box2 {
-        margin: 0 5px;
-        padding: 10px 0;
-    }
-    #latest .outer {
-        margin: 0 0 20px 0;
-    }
-    #latest .upper {
-        height: 120px;
-    }
-    #latest h3 {
-        font-size: 1.2rem;
-        margin-left: -0.8rem;
-    }
-    #latest .upper {
-        background-size: cover;
-    }
-    .form-select-lg {
-        padding: 0.5rem 1.4rem;
-        font-size: 1.2rem;
-    }
-    .form-control-lg {
-        padding: 0.5rem 1.4rem;
-        font-size: 1.2rem;
+    .whychoose {
+        padding: 80px 0 20px 0;
     }
     .contact {
         display: none;
@@ -339,17 +275,5 @@ ul {
     .footer p {
         font-size: 0.7rem;
         margin-bottom: 30px;
-    }
-    .title h1 {
-        font-size: 1.2rem;
-    }
-    .pc-money {
-        display: none;
-    }
-    .pc-btn-group {
-        display: block;
-    }
-    .rebate h5 b {
-        font-size: 0.7rem;
     }
 }
