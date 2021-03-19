@@ -25,9 +25,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-.div-margin {
-    padding: 100px 0;
-}
 ol,
 ul {
     padding: 0;
@@ -42,31 +39,6 @@ ul {
     font-size: 2.8rem;
     line-height: 1.5;
 }
-
-.title::after {
-    content: '';
-    position: absolute;
-    height: 5px;
-    right: 40%;
-    bottom: 0;
-    left: 40%;
-    background: #ae0d30;
-}
-.content {
-    padding: 40px;
-    line-height: 1.7;
-    color: #333;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.content p {
-    font-size: 1.2rem;
-}
-.content span {
-    color: #ae0d30;
-}
-
 .header {
     background: #fff;
     margin: 0;
@@ -169,9 +141,7 @@ ul {
     color: #d4d4fc;
     margin-top: 30px;
 }
-.step-img {
-    display: block;
-}
+
 .step-img-m {
     display: none;
 }
