@@ -1,13 +1,21 @@
 @charset "UTF-8";
-html{
-    width:100%;
-    overflow-x:hidden;
-  }  
 body {
-    background: #F6C527;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.txt,
+.stips,
+.btn {
+    font-family: 'Noto Sans SC', sans-serif;
 }
 .btn-area {
-    margin: 60px 0;
+    margin: 50px 0 100px 0;
 }
 a {
     color: #333;
@@ -25,19 +33,10 @@ ol,
 ul {
     padding: 0;
 }
-.container-fluid {
-    padding: 0;
-    margin: 0;
-}
 .title {
     margin: 40px 0 20px 0;
 }
-.btn2 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
-/* header */
 .header {
     background: #fff;
     margin: 0;
@@ -58,57 +57,99 @@ ul {
 .banner {
     padding-top: 0px;
 }
-.banner-bg {
+.index_banner {
     display: block;
+    max-width: 1920px;
+    margin: auto;
+    height: 930px;
+    background: url(../images/banner-bg.png) no-repeat top center;
+    background-size: auto;
+    box-sizing: border-box;
+    padding: 120px 0 0 0;
+    perspective: 200px;
+    overflow: hidden;
 }
-.banner-bg-m {
-    display: none;
+.banner_content {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner_title {
+    display: block;
+    width: 65%;
+    max-width: 800px;
+    margin: 0 auto 0 0;
+}
+.banner_title h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.banner_title img.s_title {
+    display: block;
+    max-width: 96%;
+    margin: 0 0 20px 0;
+}
+.banner_title img.banner_button {
+    display: block;
+    max-width: 96%;
+    margin: 0 0 0 0px;
 }
 
-/*tree*/
-.tree1 {
-    position: absolute;
-    right: 0px;
-    top: 400px;
-    z-index: 1;
-    display: block;
+/* list*/
+
+.list-title {
+    font-size: x-large;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #329498;
+    padding: 20px;
+    margin-bottom: 10px;
 }
-.tree2 {
-    position: absolute;
-    right: 0px;
-    top: 4000px;
-    display: block;
+.list{
+    color: #000
 }
-.tree3 {
-    position: absolute;
-    left: 0px;
-    top: 1600px;
-    display: block;
+.list h1 {
+    color: #fff;
+    font-weight: 800;
+    margin: 50px auto;
+}
+.bg {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 33px;
+    border-radius: 10px;
 }
 
 /* step */
 .card {
-    padding: 80px 120px 50px 120px;
-    border-radius: 10px;
-    margin-top: -10px;
-    z-index: 2;
+    padding: 50px 120px;
+    border-radius: 0;
 }
 .btn-rules {
     width: 234px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .btn-rules:hover {
     cursor: pointer;
 }
-.req-pc {
-    width: 1000px;
-    margin: 60px 0;
+.req {
+    width: 916px;
 }
 .step-m {
     display: none;
 }
 .req-m {
     display: none;
+}
+.detail {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 /* model */
@@ -132,15 +173,8 @@ ul {
 }
 
 /* gift */
-#gift {
-    background-image: url(../images/point.png);
-    background-repeat: repeat;
-    padding: 0 0 100px 0;
-}
-.gift-img{
-    position: relative;
-    margin: 12.5px 0;
-    z-index: 100;
+.gift {
+    margin: 180px 0;
 }
 
 /* footer */
@@ -172,24 +206,27 @@ ul {
         margin: 30px 0 20px 0;
     }
     .btn-area {
-        margin: 20px 0;
+        margin: 20px 0 60px 0;
     }
-    #gift {
-        padding: 0 0 30px 0;
+    .gift {
+        margin: 30px 0;
     }
     .btn-rules {
         width: 150px;
         margin-top: 30px;
     }
-    .btn2 {
-        margin-left: 0;
-        margin-right: 0;
+    .index_banner {
+        height: 600px;
+        background: url(../images/banner-bg-m.jpg) no-repeat top center;
+        background-size: 100% auto;
+        padding: 3rem 0 0 0;
     }
-    .banner-bg {
-        display: none;
+    .banner_title {
+        width: 85%;
+        margin: auto;
     }
-    .banner-bg-m {
-        display: block;
+    .banner_button {
+        width: 45%;
     }
     .card {
         padding: 20px;
@@ -204,8 +241,13 @@ ul {
         display: none;
     }
     .req-m {
-        margin: 20px 0 33px 0;
         display: block;
+    }
+    .detail {
+        font-size: 1rem;
+        color: #fff;
+        margin-bottom: 30px;
+        font-weight: 600;
     }
     .contact {
         display: none;
@@ -217,22 +259,5 @@ ul {
     .footer p {
         font-size: 0.7rem;
         margin-bottom: 30px;
-    }
-    .tree1 {
-        display: none;
-    }
-    
-    .tree2 {
-        display: none;
-    }
-    .tree3 {
-        display: none;
-    }
-    .yellow {
-        display: none;
-    }
-    .title {
-        padding-left: 20%;
-        padding-right: 20%;
     }
 }
