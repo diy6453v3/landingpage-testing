@@ -1,8 +1,5 @@
 @charset "UTF-8";
-html{
-    width:100%;
-    overflow-x:hidden;
-}
+
 body {
     background: #fff;
 }
@@ -116,9 +113,10 @@ ul {
 .intro h1 {
     margin-bottom: 30px;
 }
-.intro .row {
-    --bs-gutter-x: 5rem;
+.intro .detail {
+    padding-right: 50px;
 }
+
 
 /* step */
 .step {
@@ -232,6 +230,9 @@ ul {
     .detail {
         font-size: 1rem;
         margin-bottom: 50px;
+    }
+    .intro .detail {
+        padding-right: 0px;
     }
     .step-ss {
         margin-bottom: 30px;
