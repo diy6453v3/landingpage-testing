@@ -5,11 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
         <script src="assets/js/bootstrap.min.js"></script>
-        <title>亨达外汇 - 客户推介奖励计划</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		var domain = "http://uat2506.ringus-solution.com:38080/mkt-lead";
+		var username = "demo001";
+		var password = "demoPassword";
+		var coCode = "CHI";
+		var campaignId = "TESTYAM";
+		var redirectUrl = "./success.html";
+		</script>
+		<script src="./mkt-lead.js"></script>
+
+        <title>亨达外汇 - 限时开户双重回赠</title>
     </head>
 
     <body>
@@ -35,126 +52,173 @@
         <!--banner-->
         <div class="banner">
             <div class="index_banner">
-                <div class="banner_content">
+                <div class="banner_content text-center">
                     <div class="banner_title">
-                        <h1>客户推介奖励计划</h1>
-                        <p>本推广仅适用于亨达外汇的客户</p>
-                        <a href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src='assets/images/btn1.png' class='btn1'></a>
+                        <h1 data-aos="fade-down"
+                        data-aos-duration="500"
+                        data-aos-delay="100">新客户尊享</br>
+                        限时开户双重回赠</h1>
+                        <p data-aos="fade-down"
+                        data-aos-duration="500"
+                        data-aos-delay="200">─ 赠金高达3000美元 + 无上限返现 ─</p>
+                        <img src='assets/images/banner-s1.png' class='banner-s' data-aos="fade-right" data-aos-delay="400">
+                        <span data-aos="zoom-out" data-aos-delay="500">+</span>
+                        <img src='assets/images/banner-s2.png' class='banner-s' data-aos="fade-left" data-aos-delay="400"></br>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!--intro-->
-        <div class="intro">
-            <div class="container">
+        <div class='banner-btn-area'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12 text-center'>
+                    <a href='https://www.hantec-au133.com/account_real.html' target='_blank'><span class='banner-btn' data-aos="zoom-in" data-aos-delay="600">开立真实账戶 ></span></a>
+                    <a href='#form'><span class='banner-btn2' data-aos="zoom-in" data-aos-delay="600">领取$3000赠金 ></span></a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- bonus -->
+
+        <div class='bonus' data-aos="fade-up"  data-aos-duration="1000">
+            <div class='container'>
+                <div class='card'>
+                    <div class='row bonus1'>
+                        <div class='col-12 text-center'>
+                            <i></i>
+                            <h1 class='title'>开戶先赠：赠金高达3000美元</h1>
+                            <i class="ir"></i>
+                            <img src='assets/images/table.png'>
+                            <p>* 赠金可用于交易。</p>
+                            <p>^ 赠金到账起30天内完成指定交易手数要求(标准手)，赠金部分即可申请提现。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- rebate -->
+        <div class='bonus' data-aos="fade-up"  data-aos-duration="1000">
+            <div class='container'>
                 <div class='row'>
-                    <div class='col-12'>
-                        <h1>推荐双方可各获得100美元!</h1>
+                    <div class='col-12 text-center'>
+                        <i></i>
+                        <h1 class='title'>交易再返：每手回赠高达30美元</h1>
+                        <i class="ir"></i>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="detail">
-                            亨达外汇能够在外汇行业取得成功，全赖忠实客户及口碑推荐。我们的亲朋好友推荐计划，旨在向有意推荐朋友及亲友的人士表达谢意。只需通过亨达外汇进行交易，您和您的被推荐人将有机会获得现金奖赏。</br></br>
-                            推荐朋友、亲友开立亨达外汇账户，只要达到要求的交易量后，您和您的被推荐人将获得现金奖赏。
-                            
-                        </p>
+                <div class='row bonus1'>
+                    <div class='col-4'>
+                        <div class='text-center' data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+                            <img src='assets/images/rebate1.png'>
+                        </div>
                     </div>
+                    <div class='col-4'>
+                        <div class='text-center' data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                            <img src='assets/images/rebate2.png'>
+                        </div>
+                    </div>
+                    <div class='col-4'>
+                        <div class='text-center' data-aos="fade-left" data-aos-duration="800" data-aos-delay="600">
+                            <img src='assets/images/rebate3.png'>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+        <!-- form -->
+        <div class='form' id='form' data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="300">
+            <div class='container'>
+                <div class='card'>
+                <div class='row'>
+                    <div class='col-12 text-center form1'>
+                        <i></i>
+                        <h1 class='title'>亨达外汇 全球在线交易商的领军者之一</h1>
+                        <i class="ir"></i>
+                    </div>
+                </div>
+                <hr class="hr-dashed-fixed" style="--dashed-filled: 6px; --dashed-open: 5px;">
+                <div class='row'>
                     <div class='col-md-6'>
-                        <table class="table table-bordered table-striped text-center">
-                            <thead>
-                              <tr>
-                                <th scope="col">层级</th>
-                                <th scope="col">推荐人可获得</th>
-                                <th scope="col">被推荐人可获得</th>
-                                <th scope="col">交易量要求^</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td class='r'><b>$25</b></td>
-                                <td class='r'><b>$25</b></td>
-                                <td>3标准手</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td class='r'><b>$50</b></td>
-                                <td class='r'><b>$50</b></td>
-                                <td>10标准手</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td class='r'><b>$100</b></td>
-                                <td class='r'><b>$100</b></td>
-                                <td>20标准手</td>
-                              </tr>
-
-                            </tbody>
-                          </table>
-                          <p class='ps'>^ 被推荐人在开立账户起30天之内完成的交易量要求。</p>
+                        <div class='col-12'>
+                            <div class='row point' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                                <div class='col-md-auto'>
+                                    <img src='assets/images/icon1.png' class='icon'>
+                                </div>
+                                <div class='col'>
+                                    <h3>正规资质</h3>
+                                    <p>- 集团持有12个权威监管牌照</br>
+                                    - 严格遵守监管标准要求 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='row point' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                                <div class='col-md-auto'>
+                                    <img src='assets/images/icon2.png' class='icon'>
+                                </div>
+                                <div class='col'>
+                                    <h3>超低门槛</h3>
+                                    <p>- 开户免费，20美金即可交易</br>
+                                    - 400倍杠杆，点差低至0.1 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='row point' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+                                <div class='col-md-auto'>
+                                    <img src='assets/images/icon3.png' class='icon'>
+                                </div>
+                                <div class='col'>
+                                    <h3>安全交易</h3>
+                                    <p>- 客户资金存放于独立账户</br>
+                                    - 交易受到负余额的保护
+                                    </p>
+                                </div>
+                            </div>
+                            <div class='row point' data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                                <div class='col-md-auto'>
+                                    <img src='assets/images/icon4.png' class='icon'>
+                                </div>
+                                <div class='col'>
+                                    <h3>荣誉口碑</h3>
+                                    <p>- 31年老牌交易商，实力雄厚</br>
+                                    - 多次荣获国内外奖项
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- step -->
-        <div class='step'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-12 text-center'>
-                        <h1>3 步即可完成</h1>
-                        <p>今天登记！即可开始推荐</p>
-                    </div>
-                </div>
-                <div class='row step-s'>
-                    <div class='col-md-4 text-center step-ss'>
-                        <img src='assets/images/icon1.png' class='icon'>
-                        <p>1. 开立账户，并向客服登记获取推荐人资格</p>
-                    </div>
-                    <div class='col-md-4 text-center step-ss'>
-                        <img src='assets/images/icon2.png' class='icon'>
-                        <p>2. 邀请您的朋友开户</p>
-                    </div>
-                    <div class='col-md-4 text-center step-ss'>
-                        <img src='assets/images/icon3.png' class='icon'>
-                        <p>3. 当满足所有的条件后，您和您推介的客户</br>各获得100美元</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- reg1 
-
-        <div class='reg1'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-12 text-center'>
-                        <h1 class='r'>立即推荐，获取赠金奬赏</h1>
-                        <a href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src='assets/images/btn1.png' class='btn1'></a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-        <!-- reg2-->
-
-        <div class='reg2'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-12 text-center reg2-detail'>
-                        <h2>邀请您的朋友和家人选择亨达外汇，双方各得最高100美元真实可提取现金*。</h2>
-                        <h1>准备好宣传推广亨达外汇了吗？</h1>
+                    <div class='col-md-6 text-center'>
+                        <div class='form-title' data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                            <h4>— 登记领取$3000开户赠金—</h4>
                         
-                        <a href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src='assets/images/btn1.png' class='btn1'></a>
-                        <p>*有交易手数要求。</br>
-                            请参阅活动细则了解本项目详情。
-                            </p>
+                        <form id="mktLeadInsertionForm">
+                            <input class='form-fill is-valid' type='text' id='name' name='name' placeholder='请输入您的姓名'></br>
+                            <input class='form-fill' type='text' id='tel' name='tel' placeholder='请输入您的手机号码'></br>
+                            <input class='form-fill' type='text' id='email' name='email' placeholder='请输入您的电子邮箱'></br>
+                            <div id="mktLeadInsertionErrDiv">
+                                <p id="error" style="color:red;"></p>
+                            </div>
+                            <input class='form-btn' type='submit' value='一键登记'>
+                        </form>
+                        </div>
                     </div>
                 </div>
+                </div>
             </div>
-        </div> 
+        </div>
+
+
 
 
         <!-- rules -->
@@ -164,23 +228,22 @@
                     <div class='col-12'>
                         <h5>活动细则</h5>
                         <ol class="inner-txt">
-                            <li>活动登记时间：由即日起至2021年8月31日。</li>
-                            <li>本活动所针对的被推荐人须是亨达外汇现有真实账户的亲友，且之前未在亨达外汇开有真实账户。推荐人不能推荐自己参加本活动。</li>
+                            <li>活动时间：由即日起至2021年9月30日。</li>
+                            <li>活期期间，凡新客户成功开立亨达外汇的真实账户，且首笔入金达到指定金额，即可获得交易赠金。客户需主动联系客服申请获得赠金，如入金后未有向我们申请，则不会获得任何赠金。</li>
                             <li>
-                                为各获$25赠金，被推荐人须在开立账户起30天之内完成3标准手合资格交易；为各获$50赠金，被推荐人须在开立账户起30天之内完成10标准手合资格交易；为各获$100赠金，被推荐人须在开立账户起30天之内完成20标准手合资格交易。
+                                赠金到账后可用于交易；客户如在赠金有效期内取款，将视为自动放弃使用赠金，亨达外汇将即时取消赠金不作另行通知。到期后所获的奖金，最终会按产品的平仓手数派发，如手数不足原赠金之层级要求手数，则我司会在客户已平仓产品中，选取其可获最高层级的奖金派发。例子：入金2000美元，可获200美元赠金用作交易，假如活动期间平仓72手，虽达不到该层级要求之平仓手数，但依然可获得手数对应之最高层级奖金，即100美元奖金，如此类推；
                             </li>
                             <li>
-                                只有开仓时间达到5分钟的已平仓交易会被计算在交易手数内。
+                                亨达外汇于客户取款前先从账户移除赠金，最大可提取金额以扣除赠金后的余额为准。 
+                            </li>
+                            <li>
+                                如提现前已完成交易手数，即可申请出金，不影响到期获得奖金；此外，奖金将于30天有效期后结算，并于结算后的7个工作天内存入账户。
                             </li>
                             <li>
                                 有效产品：黄金、白银、外汇、差价合约（美国原油、英国原油、香港恒生指数、纳斯达克100指数、标准普尔500指数、道琼斯30指数）。</br>*1标准手的差价合约以0.1手计算。
 
                             </li>
-                            <li>客户需于活动登记时间内主动联系客服进行登记，方可获得是次活动的参加资格。如未有向我们申请，则不会获得任何赠金。</li>
-                            <li>每名被推荐人只能享受一次赠金。如出现客户滥用此项活动的情况，或者客户不满足亨达外汇开户要求，亨达外汇有权取消客户的获奖资格或拒绝颁发赠金。</li>
-                            <li>
-                                为保障公平性，我们将严格监测任何作弊行为，一经发现，亨达外汇有权取消其获奖资格，而不做另行通知。
-                            </li>
+                            <li>严禁使用赠金进行对冲交易，我们将严格监测作弊行为，一经发现，将立即取消赠金及参与活动之资格，而不做另行通知。 </li>
                             <li>如有任何争议，亨达外汇保留随时修订、暂停、终止本次活动之权利以及任何相关规则条款的最终解释权。如有其他疑问或投诉，请联系客户热线：4008 423 600 / 4001 200 603。</li>
                         </ol>
                     </div>
@@ -188,7 +251,6 @@
             </div>
             
         </div>
-
 
 
         <div class="footer">
@@ -235,5 +297,10 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            AOS.init();
+        </script>
+
     </body>
 </html>
