@@ -299,6 +299,14 @@ ul {
 .bonus1 {
     margin-bottom: 50px;
 }
+.pc {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+/* success */
 
 
 
@@ -329,7 +337,7 @@ ul {
         margin-top: 30px;
     }
     .index_banner {
-        height: 550px;
+        height: 520px;
         background: url(../images/banner-bg.png) no-repeat top center;
         background-size: cover;
         padding: 3rem 0 0 0;
@@ -381,4 +389,20 @@ ul {
     .banner span {
         display: none;
     }
+    .banner-btn, .banner-btn2 {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .form-fill {
+        font-size: 1rem;
+        padding: 10px 40px;
+    }
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+
+
 }

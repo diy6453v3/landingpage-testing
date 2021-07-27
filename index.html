@@ -15,6 +15,14 @@
         <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
         <script src="assets/js/bootstrap.min.js"></script>
 
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5C3QKMF');</script>
+    <!-- End Google Tag Manager -->
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 		var domain = "http://uat2506.ringus-solution.com:38080/mkt-lead";
@@ -30,6 +38,12 @@
     </head>
 
     <body>
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C3QKMF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
         <div class="header sticky-md-top">
             <div class="container">
                 <div class="row d-flex align-items-center">
@@ -72,9 +86,15 @@
         <div class='banner-btn-area'>
         <div class='container'>
             <div class='row'>
-                <div class='col-12 text-center'>
-                    <a href='https://www.hantec-au133.com/account_real.html' target='_blank'><span class='banner-btn' data-aos="zoom-in" data-aos-delay="600">开立真实账戶 ></span></a>
-                    <a href='#form'><span class='banner-btn2' data-aos="zoom-in" data-aos-delay="600">领取$3000赠金 ></span></a>
+                <div class='col-md-12 text-center'>
+                    <div class='pc'>
+                        <a href='https://www.hantec-au133.com/account_real.html' target='_blank'><span class='banner-btn' data-aos="zoom-in" data-aos-delay="600">开立真实账戶 ></span></a>
+                        <a href='#form'><span class='banner-btn2' data-aos="zoom-in" data-aos-delay="600">领取$3000赠金 ></span></a>
+                    </div>
+                    <div class='mobile'>
+                        <a href='https://www.hantec-au133.com/account_real.html' target='_blank'><p class='banner-btn' data-aos="zoom-in" data-aos-delay="600">开立真实账戶 ></p></a>
+                        <a href='#form'><p class='banner-btn2' data-aos="zoom-in" data-aos-delay="600">领取$3000赠金 ></p></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,13 +223,14 @@
                             <h4>— 登记领取$3000开户赠金—</h4>
                         
                         <form id="mktLeadInsertionForm">
-                            <input class='form-fill is-valid' type='text' id='name' name='name' placeholder='请输入您的姓名'></br>
-                            <input class='form-fill' type='text' id='tel' name='tel' placeholder='请输入您的手机号码'></br>
-                            <input class='form-fill' type='text' id='email' name='email' placeholder='请输入您的电子邮箱'></br>
+                            <input type='text' id='name' name='name' placeholder='请输入您的姓名' class='form-fill'></br>
+                            <input type='text' id='tel' name='tel' placeholder='请输入您的手机号码' class='form-fill'></br>
+                            <input type='text' id='email' name='email' placeholder='请输入您的电子邮箱' class='form-fill'></br>
+
                             <div id="mktLeadInsertionErrDiv">
                                 <p id="error" style="color:red;"></p>
                             </div>
-                            <input class='form-btn' type='submit' value='一键登记'>
+                            <input type='submit' value='一键登记' class='form-btn' >
                         </form>
                         </div>
                     </div>
@@ -297,10 +318,12 @@
                 </div>
             </div>
         </div>
+        
 
         <script>
             AOS.init();
         </script>
+
 
     </body>
 </html>
