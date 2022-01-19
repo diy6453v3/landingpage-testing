@@ -1,157 +1,267 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Get your $3100 welcome offer at Hantec!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--leads api-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var domain = "https://enq.hantecgroup.com/mkt-lead";
+        var username = "demo001";
+        var password = "2MgonKtaMIM8I0VD";
+        var coCode = "HAU";
+        var campaignId = "HAURef2021";
+        var redirectUrl = "https://www.hantec-au.com/en/ib/s.html";
+    </script>
+    <script src="./mkt-lead.js"></script>
+    <!--end leads api-->
+    <title>HAU - IB Program</title>
 </head>
 
-<body style="margin: 0; padding: 0;">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-            <td style="padding: 20px 20px 20px 20px;" bgcolor="#F7F9FA">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #e5e5e5; border-radius: 10px;" bgcolor="#FFFFFF">
-                    <tr>
-                        <td style="padding: 40px 30px 10px 30px;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+<body>
+    <!--header-->
+    <div class="header sticky-md-top">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <a class="logo" target="_blank" href="https://www.hantec-au.com"><img class="img-fluid" src="assets/images/logo.png" alt="logo" /></a>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <a class="btn header-btn" href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-01f.svg" /> &nbsp;LiveCaht</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <tr>
-                                    <td align="center" style="padding: 0 0 30px 0;">
-                                        <img src="https://www.hantec-au.com/edm/edm-hma/logo-main.png" alt="LOGO" width="48" height="48" style="display: block;">
-                                    </td>
-                                </tr>
+    <!--banner-->
+    <div class='banner'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='banner-content'>
+                        <h1>HAU - IB Program</h1>
+                        <p style="font-size: large;">If you are planning to develop potential customers in the foreign exchange and finance industries,  HAU is here to provide you with the promotion. <br>
+                            <br>If you are interested in becoming an IB agent for HAU, please fill in this form and we will have someone follow up your application as soon as possible.</p>
+                    </div>
+                </div>
+                <div class='col-md-1'></div>
+                <div class='col-md-4'>
+                    <div class='banner-form'>
+                        <div class='form-card shadow-lg mb-5'>
 
-                                <tr>
-                                    <td align="center" style="padding: 0 30px 0 30px; color: #3d474d; font-family: Arial, sans-serif; font-size: 24px;">
-                                        Welcome to Hantec!
-                                    </td>
-                                </tr>
+                            <form id='mktLeadInsertionForm' class="row g-3">
 
-                                <tr>
-                                    <td align="center" style="padding: 20px 30px 30px 30px; color: #3d474d; font-family: Arial, sans-serif; font-size: 30px; line-height: 42px;">
-                                        <b>Let's create your account in 3 mins to grab the welcome offer $100 credit.</b>
-                                    </td>
-                                </tr>
+                                <div class="col-md-12">
+                                    <label for="name" class="form-label">Name<span style="color: #e26f3d;">*</span></label>
+                                    <input type="text" class="form-control" id="name" name='name'>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="extraInfo[0].key" class="form-label">Country/ Region<span style="color: #e26f3d;">*</span></label>
+                                    <input type="text" class="form-control" id="extraInfo[0].key" name='extraInfo[0].key'>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="tel" class="form-label">Phone number<span style="color: #e26f3d;">*</span></label>
+                                    <input type="text" class="form-control" id="tel" name="tel">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="email" class="form-label">Email<span style="color: #e26f3d;">*</span></label>
+                                    <input type="text" class="form-control" id="email" name="email">
+                                </div>
+                                <div id="mktLeadInsertionErrDiv">
+                                    <p id="error" style="color:red;"></p>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <input type="submit" class="btn btn-primary" value='HAU파트너가 되기'>
+                                </div>
+                                <div class="col-12">
+                                    <p class='p2'>HAU respects the privacy of all customers. Once you "submit" the form above that means you are agree with HAU to use the information provided above to contact you.</p>
+                                    <p class='p2'><a target="_blank" href='https://www.hantec-au.com/en/terms.html#01'>Risk Disclosure</a> | <a target="_blank" href='https://www.hantec-au.com/en/terms.html#04'>Privacy Policy</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-1'></div>
+            </div>
+        </div>
+    </div>
 
-                                <tr>
-                                    <td align="center" style="padding: 25px 0 25px 0;">
-                                        <img src="https://www.hantec-au.com/edm/edm-hma/ill.png" alt="LOGO" width="380" height="210" style="display: block;">
-                                    </td>
-                                </tr>
+    <!--intro-->
+    <div class='intro mg'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h3>What does IB mean?</h3>
+                    <p class='p3'>Introducing Broker (IB) means refers to an individual or business that introduces new customers to other companies. It is a partnership between two companies to promote business growth of both parties. In this program, IB introduces new customers to HAU, and in return, IB receives a certain amount from HAU.</p>
+                </div>
+                <div class='col-md-6'>
+                    <h3>How do I introduce new customers?</h3>
+                    <p>IB introduces customers to HAU through its website or others marketing channel. You can insert a unique link into the content and place a HAU banner on your IB website page. Customer will finish the registration by clicking on the banner. 
+                        <br>
+                        <br>You can also use e-mails, SNS posts, and marketing campaigns including HAU's unique links. HAU will provides everything it is necessary to help our partner, so that IB can focus on doing its best.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <tr>
-                                    <td align="center" style="padding: 30px 0 30px 0;">
-                                        <a href="https://enq.hantec-au.com/live-acc-reg-hau2/reg.htm?siteLanguage=en_US" style="box-sizing:border-box;background-repeat:no-repeat;font-family:Arial, sans-serif;font-weight:500;color:#00aaff;border:1px solid #00aaff;border-radius:7px;font-size:15px;line-height:36px;height:36px;display:inline-block;white-space:nowrap;overflow:visible;text-align:center;text-decoration:none;border-radius:10px;line-height:48px;height:48px;padding:0 30px;border-color:#00aaff;color:white;background-color:#00aaff;font-size:17px;border:10px solid #00aaff;line-height:28px;padding:0 20px"
-                                            target="_blank" data-saferedirecturl="https://enq.hantec-au.com/live-acc-reg-hau2/reg.htm?siteLanguage=en_US">One step to $100 credit</a>
-                                    </td>
-                                </tr>
+    <!--point-->
+    <div class='point mg2'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class='point-l'>
+                        <img src='assets/images/pad.png' class='img-fluid'>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div class='point-r'>
+                        <div class='container'>
+                            <div class='row pr'>
+                                <div class='col-md-6 point-b'>
 
-                                <tr>
-                                    <td align="center" style="padding: 0 20px 25px 20px; color: #8a9499; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px;">
-                                        By accepting the offer, I hereby agree the terms & conditions below.
-                                    </td>
-                                </tr>
+                                    <h4><img src="assets/images/ib-icon-1.png"> Given commission immediately</h4>
+                                    <p>Excellent commission rate, multi-level rebate stage, immediate payment system.</p>
+                                </div>
+                                <div class='col-md-6 point-b'>
+                                    <h4><img src="assets/images/ib-icon-2.png">  Technical Support</h4>
+                                    <p>Collaboration with the world’s best financial market analysis service - TRADING CENTRAL, provides free financial market technology analysis services for individual investors.</p>
+                                </div>
+                                <div class='col-md-6 point-b'>
+                                    <h4><img src="assets/images/ib-icon-3.png"> Excellent Marketing Support</h4>
+                                    <p>Various regular marketing activities, online advertising distribution, download and update market promotional materials from real-time websites, and provide professional investment advice from industry-famous analysts.</p>
+                                </div>
+                                <div class='col-md-6 point-b'>
+                                    <h4><img src="assets/images/ib-icon-4.png"> Activities Support</h4>
+                                    <p>Fully support various activities such as IB's activities and investment courses, and supports abundant event gifts and promotional materials.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--step-->
+    <div class='step mg3'>
+        <div class='container'>
+            <div class='row text-center'>
+                <div class='col-md-4'>
+                    <h1>01</h1>
+                    <p>Contact the customer counselor or fill out the application form to submit the basic information.</p>
+                </div>
+                <div class='col-md-4'>
+                    <h1>02</h1>
+                    <p>Looking forward to hearing from HAU, <br>to discuss IB program matters.</p>
+                </div>
+                <div class='col-md-4'>
+                    <h1>03</h1>
+                    <p>Sign the agreement and officially<br>start the business with HAU.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <tr>
-                                    <td style="padding: 15px 0 15px 0;"></td>
-                                </tr>
+    <!--whyus-->
+    <div class='whyus mg'>
+        <div class='container'>
+            <div class='row text-center'>
+                <h2>HAU, the strongest supporter of your business</h2>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <p><img src="assets/images/tick-green.svg"> With a long history of 31 years, based in 19 cities across 14 countries around the world.</p>
+                </div>
+                <div class='col-md-6'>
+                    <p><img src="assets/images/tick-green.svg"> Catches the attention from customers with its endless marketing and promotion benefits.</p>
+                </div>
+                <div class='col-md-6'>
+                    <p><img src="assets/images/tick-green.svg"> More than over 700 employees provide the services you need from time to time.</p>
+                </div>
+                <div class='col-md-6'>
+                    <p><img src="assets/images/tick-green.svg"> Satisfy customer needs with various transaction software.</p>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-12 text-center'>
+                    <a href="#"><button class="btn btn-outline-primary btnb">Become HAU partner</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                <tr>
-                                    <td style="box-sizing:border-box; background-repeat:no-repeat; border-radius:15px; padding:20px; background-color:#f7f9fa; padding:30px">
-                                        <table style="box-sizing:border-box; background-repeat:no-repeat; border-spacing:0; border-collapse:collapse; padding:0; vertical-align:top; text-align:left; font-weight:400; width:100%; margin-bottom:10px">
-                                            <tbody>
-                                                <tr style="box-sizing:border-box; background-repeat:no-repeat; padding:0; vertical-align:top; text-align:left; font-weight:400">
-                                                    <td style="box-sizing:border-box; background-repeat:no-repeat; word-break:normal; padding:0; vertical-align:top; text-align:left; font-weight:400; line-height:160%; border-collapse:collapse!important">
-                                                        <h3 style="box-sizing:border-box; background-repeat:no-repeat; margin:0 0 10px 0; font-size:21px; font-weight:400; margin-bottom:0; font-family: Arial, sans-serif; color: #3d474d;">
-                                                            How to get $3,000 more?
-                                                        </h3>
-                                                        <h3 style="box-sizing:border-box; background-repeat:no-repeat; margin:0 0 10px 0; font-size:21px; font-weight:400; color:#8a9499; font-family: Arial, sans-serif;">
-                                                            by deposit and trade.
-                                                        </h3>
-                                                    </td>
-                                                    <td style="box-sizing:border-box; background-repeat:no-repeat; word-break:normal; padding:0; vertical-align:top; text-align:left; font-weight:400; line-height:160%; border-collapse:collapse!important; width:60px; text-align:right">
-                                                        <img style="box-sizing:border-box; background-repeat:no-repeat; outline:none; text-decoration:none; display:inline-block; Margin-left:24px" src="https://www.hantec-au.com/edm/edm-hma/logo.png" width="40" height="40">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
 
-                                        <table style="box-sizing:border-box;background-repeat:no-repeat;border-spacing:0;border-collapse:collapse;padding:0;vertical-align:top;text-align:left;font-weight:400;width:100%;margin-bottom:20px">
-                                            <tbody>
-                                                <tr style="box-sizing:border-box;background-repeat:no-repeat;padding:0;vertical-align:top;text-align:left;font-weight:400">
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;width:40px;padding:7px 0">
-                                                        <img style="box-sizing:border-box;background-repeat:no-repeat;outline:none;text-decoration:none;display:inline-block;Margin-right:16px" src="https://www.hantec-au.com/edm/edm-hma/icon1.png" width="24" height="24">
-                                                    </td>
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;padding:7px 0;font-family: Arial, sans-serif; color: #3d474d;">
-                                                        Make deposit to redeem deposit credit up to USD 3,000
-                                                    </td>
-                                                </tr>
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
-                                                <tr style="box-sizing:border-box;background-repeat:no-repeat;padding:0;vertical-align:top;text-align:left;font-weight:400">
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;width:40px;padding:7px 0">
-                                                        <img style="box-sizing:border-box;background-repeat:no-repeat;outline:none;text-decoration:none;display:inline-block;Margin-right:16px" src="https://www.hantec-au.com/edm/edm-hma/icon2.png" width="24" height="24">
-                                                    </td>
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;padding:7px 0;font-family: Arial, sans-serif; color: #3d474d;">
-                                                        Make transaction
-                                                    </td>
-                                                </tr>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "104015225459790");
+        chatbox.setAttribute("attribution", "biz_inbox");
 
-                                                <tr style="box-sizing:border-box;background-repeat:no-repeat;padding:0;vertical-align:top;text-align:left;font-weight:400">
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;width:40px;padding:7px 0">
-                                                        <img style="box-sizing:border-box;background-repeat:no-repeat;outline:none;text-decoration:none;display:inline-block;Margin-right:16px" src="https://www.hantec-au.com/edm/edm-hma/icon3.png" width="24" height="24">
-                                                    </td>
-                                                    <td style="box-sizing:border-box;background-repeat:no-repeat;word-break:normal;padding:0;vertical-align:top;text-align:left;font-weight:400;line-height:160%;border-collapse:collapse!important;padding:7px 0;font-family: Arial, sans-serif; color: #3d474d;">
-                                                        Achieve required transaction lots to convert credit to cash bonus
-                                                    </td>
-                                                </tr>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
 
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/ko_KR/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td style="padding: 20px 0px 30px 0px; color: #8a9499; font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;">
-                                        <tr>
-                                            <td style="padding: 0 0 15px 0; color: #8a9499; font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;">
-                                                Terms and Conditions:<br>1. I/We understood and hereby agree that my personal data will be provided and shared to other parties and entities within the Hantec group of companies from now onwards. I/We hereby
-                                                agree HML may use my name and contact details for promotional, marketing or solicitation purposes. <br> 2. I/We hereby agree Hantec re-assigns me to any suitable subsidiary of the Group to open an account
-                                                according to my place of residence.
-                                                <br>3. The promotion period ends one month after this email is sent.<br> 4. Hantec reserves the final right to suspend, modify or terminate this event and/or any of the terms and conditions without prior
-                                                notice. In case of dispute, the decision of Hantec shall be final.<br>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 0 0 15px 0; color: #8a9499; font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;">
-                                                Please do not reply this email. If you wish to unsubscribe, please <a href="#" style="color: #7F8184;">click here</a>.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 0 0 20px 0; color: #8a9499; font-family: Arial, sans-serif; font-size: 13px; line-height: 18px;">
-                                                Risk warning: Margin trading has a high risk, and investors need to depend on their own ability when considering the investment amount.
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 15px 0 15px 0;">
-                                        <tr>
-                                            <td width="100%" align="center" style="color: #C9CACA; font-family: Arial, sans-serif; font-size: 13px; line-height: 30px;">
-                                                © Copyright@2021 Hantec. All rights reserved.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </tr>
-                            </table>
-                    </tr>
-        </tr>
-        </table>
-        </td>
-        </tr>
-    </table>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        Risk warning: Margin trading has a high risk, and investors need to depend on their own ability when considering the investment amount. There is a profit or loss of investment, you may lose all the principal. Margin trading may not be suitable for all investors, please confirm that you fully understand the risks before trading.
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center contact">
+                <div class="col-6">
+                    <a href="javascript:void(window.open('https://livechat.hantecgroup.com/chat/chatClient/chatbox.jsp?companyID=8972&configID=19&skillId=3&enterurl=https%3A%2F%2Flivechat.hantec.com%2Fchat%2Fpreview.jsp%3Fid%3D8972&k=1','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-01.svg" /></a>
+                    <p>LiveChat</p>
+                </div>
+                <!--div class="col-3">
+                    <a href="javascript:void(window.open('http://pf.kakao.com/_sxkxhqK/chat','','width=760,height=500,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))"><img src="assets/images/contact-icon-03.svg" /></a>
+                    <p>Kakao Talk</p>
+                </div-->
+                <div class="col-6">
+                    <img src="assets/images/contact-icon-04.svg" />
+                    <p>dm@hantecmarkets.com</p>
+                </div>
+                <!--div class="col-4">
+                    <img src="assets/images/contact-icon-02.svg" />
+                    <p>+82 220236515</p-->
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>
+                        <a target="_blank" href="https://www.hantec-au.com/">Back to HAU homepage</a> |
+                        <a target="_blank" href="https://www.hantec-au.com/en/terms.html#04">Privacy Policy</a> |
+                        <a target="_blank" href="https://www.hantec-au.com/en/terms.html#02">Disclaimer</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
