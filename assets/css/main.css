@@ -107,6 +107,14 @@ a:hover{
 	margin: 0 0 0 15px;
 }
 
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 
 @media(max-width:750px){
 
@@ -125,6 +133,14 @@ a:hover{
 }	
 .banner_button{
   width: 45%;
+}
+
+.pc {
+  display: none;
+}
+
+.mobile {
+  display: block;
 }
 }
 
